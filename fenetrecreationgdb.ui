@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreCreationGdb</class>
+ <widget class="QWidget" name="FenetreCreationGdb">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#logo{ 
+ border-width: 2px;
+    border-style: none;
+    border-radius: 3px;
+	border-color: transparent;
+	background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #F2F3F4, stop:1 #CACFD2);
+}
+#creerGdb{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+border-color : black; 
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #CFCFCF , stop:1 #F2F2F2);
+
+}
+
+QLineEdit{
+background-color: #FBFCFC; 
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background: transparent;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/new/images/logo.png</normaloff>:/new/images/logo.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="creerGdb">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>430</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#logo{
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 rgba(202, 207, 210,255), stop:1 rgba(242, 243, 244, 255));
+}
+
+#creerGdb{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Créer</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nomGdb">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>220</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="descGdb">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>280</y>
+     <width>271</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>80</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>CRÉATION DU GESTIONNAIRE DU BUDGET </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>220</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nom du gestionnaire :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>280</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Description :</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

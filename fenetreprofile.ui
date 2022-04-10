@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreProfile</class>
+ <widget class="QWidget" name="FenetreProfile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#logo{ 
+ border-width: 2px;
+    border-style: none;
+    border-radius: 3px;
+	border-color: transparent;
+	background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #F2F3F4, stop:1 #CACFD2);
+}
+
+QPushButton{ 
+border-width: 2px;
+    border-radius: 3px;
+border-style: solid;
+    border-color: black;
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #CFCFCF , stop:1 #F2F2F2);
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>40</y>
+     <width>200</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nom de l'utilisateur</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;Retourner au menu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background: transparent;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/new/images/logo.png</normaloff>:/new/images/logo.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="suppCompteButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>400</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#suppCompteButton{ 
+border-width: 2px;
+    border-radius: 3px;
+border-style: solid;
+    border-color: black;
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #D98880 , stop:1 #A93226);
+}</string>
+   </property>
+   <property name="text">
+    <string>Supprimer votre compte</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="changerMdpButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>320</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modifier votre mot de passe</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="changerMailButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>240</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modifier votre adresse mail</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mailUtilisateur">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>190</y>
+     <width>361</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>example@abc.com</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>150</y>
+     <width>301</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Votre mail actuel: </string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

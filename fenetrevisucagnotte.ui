@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreVisuCagnotte</class>
+ <widget class="QWidget" name="FenetreVisuCagnotte">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Helvetica Neue</family>
+    <pointsize>15</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{ 
+border-width: 2px;
+    border-radius: 3px;
+border-style: solid;
+    border-color: black;
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #CFCFCF , stop:1 #F2F2F2);
+}
+#logo{
+border-width: 2px;
+    border-radius: 3px;
+border-style: none;
+background:transparent;
+}
+
+QListView {
+	background: qlineargradient(spread:pad, x1:0 y1:1, x2:0, y2:0, stop:0 rgba(202, 207, 210,255), stop:1 rgba(242, 243, 244, 255));
+	border-color:black; 
+	border-style:solid; 
+	border-width:2px;
+}
+QListView::item{
+    height: 31px;
+
+}
+
+QListView::item:hover {
+    background: #CFCFCF;
+}
+QListView::item::selected{
+	background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #98C58E , stop:1 #7FB371);
+}</string>
+  </property>
+  <widget class="QPushButton" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Retourner au menu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/new/images/logo.png</normaloff>:/new/images/logo.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QListView" name="listViewCagnotte">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>130</y>
+     <width>361</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>60</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>VOS CAGNOTTES</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deconnexionButton">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>60</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Déconnexion</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

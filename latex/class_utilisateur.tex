@@ -1,0 +1,242 @@
+\hypertarget{class_utilisateur}{}\doxysection{Utilisateur Class Reference}
+\label{class_utilisateur}\index{Utilisateur@{Utilisateur}}
+
+
+La classe \mbox{\hyperlink{class_utilisateur}{Utilisateur}} contient les informations d\textquotesingle{}un utilisateur de Share\+Count et permet de modifier ses comptes.  
+
+
+
+
+{\ttfamily \#include $<$utilisateur.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_utilisateur_a37e07e4ffbdf4e18e6741dd210081de9}{Utilisateur}} (std\+::string \mbox{\hyperlink{class_utilisateur_ae5c074763a47d2d73f2856331754fb3e}{id}}, std\+::string \mbox{\hyperlink{class_utilisateur_abaabdf27157a48a5fb05be8d02362771}{mail}}, std\+::string \mbox{\hyperlink{class_utilisateur_ae9f165faae2b557a054359d7047126d3}{mot\+De\+Passe}})
+\begin{DoxyCompactList}\small\item\em Le constructeur permet de définir l\textquotesingle{}identifiant, l\textquotesingle{}adresse mail et le mot de passe de l\textquotesingle{}utilisateur en fonction de ses paramètres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_utilisateur_a0c53bf2a1f3874a345fc851969ea0d07}{ajouter\+GDB}} (\mbox{\hyperlink{class_compte}{Compte}} compte)
+\begin{DoxyCompactList}\small\item\em La méthode permet d\textquotesingle{}ajouter un gestionnaire de budget à la liste des comptes de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_utilisateur_a0f009c2007c73b76dc004f02557e8b5a}{ajouter\+Cagnotte}} (\mbox{\hyperlink{class_compte}{Compte}} compte)
+\begin{DoxyCompactList}\small\item\em La méthode permet d\textquotesingle{}ajouter une cagnotte à la liste des comptes de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_a52a5063f09f7af853f82506cb8b080ab}\label{class_utilisateur_a52a5063f09f7af853f82506cb8b080ab}} 
+const std\+::string \& {\bfseries get\+Nom} () const
+\begin{DoxyCompactList}\small\item\em getter de Nom \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_a97f4e93e737b9c6bf5545439353a91a6}\label{class_utilisateur_a97f4e93e737b9c6bf5545439353a91a6}} 
+void {\bfseries set\+Nom} (const std\+::string \&new\+Nom)
+\begin{DoxyCompactList}\small\item\em setter de Nom \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_ae15715a924d9c26fad7a865cee046386}\label{class_utilisateur_ae15715a924d9c26fad7a865cee046386}} 
+const std\+::string \& {\bfseries get\+Prenom} () const
+\begin{DoxyCompactList}\small\item\em getter de Prenom \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_ad46b3e9e385926c4e7aef26185a4f71c}\label{class_utilisateur_ad46b3e9e385926c4e7aef26185a4f71c}} 
+void {\bfseries set\+Prenom} (const std\+::string \&new\+Prenom)
+\begin{DoxyCompactList}\small\item\em setter de Prenom \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_ac30dcca533f2963b5f4ed24a2c08bc68}\label{class_utilisateur_ac30dcca533f2963b5f4ed24a2c08bc68}} 
+const std\+::string \& {\bfseries get\+Id} () const
+\begin{DoxyCompactList}\small\item\em getter de Id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_abc673f59cba1168a952c3da09d5f4a6f}\label{class_utilisateur_abc673f59cba1168a952c3da09d5f4a6f}} 
+void {\bfseries set\+Id} (const std\+::string \&new\+Id)
+\begin{DoxyCompactList}\small\item\em setter de Id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_a9f129fefdf98d44bb27cdcde4f613dd3}\label{class_utilisateur_a9f129fefdf98d44bb27cdcde4f613dd3}} 
+const std\+::string \& {\bfseries get\+Mail} () const
+\begin{DoxyCompactList}\small\item\em getter de Mail \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_a1f456ef1fbd767b02aabc893f3bfa9f3}\label{class_utilisateur_a1f456ef1fbd767b02aabc893f3bfa9f3}} 
+void {\bfseries set\+Mail} (const std\+::string \&new\+Mail)
+\begin{DoxyCompactList}\small\item\em setter de Mail \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_ab0894485a326c3b11755cd4f03ef6655}\label{class_utilisateur_ab0894485a326c3b11755cd4f03ef6655}} 
+const std\+::string \& {\bfseries get\+Mot\+De\+Passe} () const
+\begin{DoxyCompactList}\small\item\em getter de Mot de passe \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_aad4c386ed0bb490a5f9f33423b978b03}\label{class_utilisateur_aad4c386ed0bb490a5f9f33423b978b03}} 
+void {\bfseries set\+Mot\+De\+Passe} (const std\+::string \&new\+Mot\+De\+Passe)
+\begin{DoxyCompactList}\small\item\em setter de Mot de passe \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_a316577dc70dc326f31142eb3d532a93e}\label{class_utilisateur_a316577dc70dc326f31142eb3d532a93e}} 
+const std\+::vector$<$ \mbox{\hyperlink{class_compte}{Compte}} $>$ \& {\bfseries get\+Comptes} () const
+\begin{DoxyCompactList}\small\item\em getter de Comptes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_utilisateur_ad4b9906602f921000e2c36a3258353e9}\label{class_utilisateur_ad4b9906602f921000e2c36a3258353e9}} 
+void {\bfseries set\+Comptes} (const std\+::vector$<$ \mbox{\hyperlink{class_compte}{Compte}} $>$ \&new\+Comptes)
+\begin{DoxyCompactList}\small\item\em setter de Comptes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_utilisateur_a37e07e4ffbdf4e18e6741dd210081de9}{Utilisateur}} (std\+::string \mbox{\hyperlink{class_utilisateur_ae5c074763a47d2d73f2856331754fb3e}{id}}, std\+::string \mbox{\hyperlink{class_utilisateur_abaabdf27157a48a5fb05be8d02362771}{mail}}, std\+::string \mbox{\hyperlink{class_utilisateur_ae9f165faae2b557a054359d7047126d3}{mot\+De\+Passe}})
+\begin{DoxyCompactList}\small\item\em Le constructeur permet de définir l\textquotesingle{}identifiant, l\textquotesingle{}adresse mail et le mot de passe de l\textquotesingle{}utilisateur en fonction de ses paramètres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_utilisateur_acfeefb1f43acb46e83fa3476fff52fcf}{ajouter\+GDB}} (std\+::string \mbox{\hyperlink{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}{nom}})
+\begin{DoxyCompactList}\small\item\em La méthode permet d\textquotesingle{}ajouter un gestionnaire de budget à la liste des comptes de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_utilisateur_a9faa248cb5ec44a5af28c8a45b291638}{ajouter\+Cagnotte}} (std\+::string \mbox{\hyperlink{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}{nom}}, float objectif)
+\begin{DoxyCompactList}\small\item\em La méthode permet d\textquotesingle{}ajouter une cagnotte à la liste des comptes de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}{nom}}
+\item 
+std\+::string \mbox{\hyperlink{class_utilisateur_a7cbd4b405cdff4fed665d74ddca1a61f}{prenom}}
+\item 
+std\+::string \mbox{\hyperlink{class_utilisateur_ae5c074763a47d2d73f2856331754fb3e}{id}}
+\item 
+std\+::string \mbox{\hyperlink{class_utilisateur_abaabdf27157a48a5fb05be8d02362771}{mail}}
+\item 
+std\+::string \mbox{\hyperlink{class_utilisateur_ae9f165faae2b557a054359d7047126d3}{mot\+De\+Passe}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_compte}{Compte}} $>$ \mbox{\hyperlink{class_utilisateur_a200d1ca800580b4266beb8f14883df11}{comptes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{class_utilisateur}{Utilisateur}} contient les informations d\textquotesingle{}un utilisateur de Share\+Count et permet de modifier ses comptes. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+C. Mathias 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_utilisateur_a37e07e4ffbdf4e18e6741dd210081de9}\label{class_utilisateur_a37e07e4ffbdf4e18e6741dd210081de9}} 
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{Utilisateur()}{Utilisateur()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Utilisateur\+::\+Utilisateur (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{std\+::string}]{mail,  }\item[{std\+::string}]{mot\+De\+Passe }\end{DoxyParamCaption})}
+
+
+
+Le constructeur permet de définir l\textquotesingle{}identifiant, l\textquotesingle{}adresse mail et le mot de passe de l\textquotesingle{}utilisateur en fonction de ses paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & L\textquotesingle{}identifiant donné par utilisateur \\
+\hline
+{\em mail} & L\textquotesingle{}adresse mail donnée par l\textquotesingle{}utilisateur \\
+\hline
+{\em mot\+De\+Passe} & Le mot de passe donné par l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_utilisateur_a37e07e4ffbdf4e18e6741dd210081de9}\label{class_utilisateur_a37e07e4ffbdf4e18e6741dd210081de9}} 
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\index{Utilisateur@{Utilisateur}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{Utilisateur()}{Utilisateur()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Utilisateur\+::\+Utilisateur (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{std\+::string}]{mail,  }\item[{std\+::string}]{mot\+De\+Passe }\end{DoxyParamCaption})}
+
+
+
+Le constructeur permet de définir l\textquotesingle{}identifiant, l\textquotesingle{}adresse mail et le mot de passe de l\textquotesingle{}utilisateur en fonction de ses paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & L\textquotesingle{}identifiant donné par utilisateur \\
+\hline
+{\em mail} & L\textquotesingle{}adresse mail donnée par l\textquotesingle{}utilisateur \\
+\hline
+{\em mot\+De\+Passe} & Le mot de passe donné par l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_utilisateur_a0f009c2007c73b76dc004f02557e8b5a}\label{class_utilisateur_a0f009c2007c73b76dc004f02557e8b5a}} 
+\index{Utilisateur@{Utilisateur}!ajouterCagnotte@{ajouterCagnotte}}
+\index{ajouterCagnotte@{ajouterCagnotte}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{ajouterCagnotte()}{ajouterCagnotte()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Utilisateur\+::ajouter\+Cagnotte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_compte}{Compte}}}]{compte }\end{DoxyParamCaption})}
+
+
+
+La méthode permet d\textquotesingle{}ajouter une cagnotte à la liste des comptes de l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Nom de la cagnotte de budget \\
+\hline
+{\em objectif} & Objectif en euros de la cagnotte \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_utilisateur_a9faa248cb5ec44a5af28c8a45b291638}\label{class_utilisateur_a9faa248cb5ec44a5af28c8a45b291638}} 
+\index{Utilisateur@{Utilisateur}!ajouterCagnotte@{ajouterCagnotte}}
+\index{ajouterCagnotte@{ajouterCagnotte}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{ajouterCagnotte()}{ajouterCagnotte()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Utilisateur\+::ajouter\+Cagnotte (\begin{DoxyParamCaption}\item[{std\+::string}]{nom,  }\item[{float}]{objectif }\end{DoxyParamCaption})}
+
+
+
+La méthode permet d\textquotesingle{}ajouter une cagnotte à la liste des comptes de l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Nom de la cagnotte de budget \\
+\hline
+{\em objectif} & Objectif en euros de la cagnotte \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_utilisateur_a0c53bf2a1f3874a345fc851969ea0d07}\label{class_utilisateur_a0c53bf2a1f3874a345fc851969ea0d07}} 
+\index{Utilisateur@{Utilisateur}!ajouterGDB@{ajouterGDB}}
+\index{ajouterGDB@{ajouterGDB}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{ajouterGDB()}{ajouterGDB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Utilisateur\+::ajouter\+GDB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_compte}{Compte}}}]{compte }\end{DoxyParamCaption})}
+
+
+
+La méthode permet d\textquotesingle{}ajouter un gestionnaire de budget à la liste des comptes de l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Nom du gestionnaire de budget \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_utilisateur_acfeefb1f43acb46e83fa3476fff52fcf}\label{class_utilisateur_acfeefb1f43acb46e83fa3476fff52fcf}} 
+\index{Utilisateur@{Utilisateur}!ajouterGDB@{ajouterGDB}}
+\index{ajouterGDB@{ajouterGDB}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{ajouterGDB()}{ajouterGDB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Utilisateur\+::ajouter\+GDB (\begin{DoxyParamCaption}\item[{std\+::string}]{nom }\end{DoxyParamCaption})}
+
+
+
+La méthode permet d\textquotesingle{}ajouter un gestionnaire de budget à la liste des comptes de l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Nom du gestionnaire de budget \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_utilisateur_a200d1ca800580b4266beb8f14883df11}\label{class_utilisateur_a200d1ca800580b4266beb8f14883df11}} 
+\index{Utilisateur@{Utilisateur}!comptes@{comptes}}
+\index{comptes@{comptes}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{comptes}{comptes}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_compte}{Compte}} $>$ Utilisateur\+::comptes\hspace{0.3cm}{\ttfamily [protected]}}
+
+Liste des comptes dans lesquels l\textquotesingle{}utilisateur participe \mbox{\Hypertarget{class_utilisateur_ae5c074763a47d2d73f2856331754fb3e}\label{class_utilisateur_ae5c074763a47d2d73f2856331754fb3e}} 
+\index{Utilisateur@{Utilisateur}!id@{id}}
+\index{id@{id}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily std\+::string Utilisateur\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+Identifiant de l\textquotesingle{}utilisateur \mbox{\Hypertarget{class_utilisateur_abaabdf27157a48a5fb05be8d02362771}\label{class_utilisateur_abaabdf27157a48a5fb05be8d02362771}} 
+\index{Utilisateur@{Utilisateur}!mail@{mail}}
+\index{mail@{mail}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{mail}{mail}}
+{\footnotesize\ttfamily std\+::string Utilisateur\+::mail\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adresse mail de l\textquotesingle{}utilisateur \mbox{\Hypertarget{class_utilisateur_ae9f165faae2b557a054359d7047126d3}\label{class_utilisateur_ae9f165faae2b557a054359d7047126d3}} 
+\index{Utilisateur@{Utilisateur}!motDePasse@{motDePasse}}
+\index{motDePasse@{motDePasse}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{motDePasse}{motDePasse}}
+{\footnotesize\ttfamily std\+::string Utilisateur\+::mot\+De\+Passe\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mot de passe de l\textquotesingle{}utilisateur \mbox{\Hypertarget{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}\label{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}} 
+\index{Utilisateur@{Utilisateur}!nom@{nom}}
+\index{nom@{nom}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily std\+::string Utilisateur\+::nom\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nom de l\textquotesingle{}utilisateur \mbox{\Hypertarget{class_utilisateur_a7cbd4b405cdff4fed665d74ddca1a61f}\label{class_utilisateur_a7cbd4b405cdff4fed665d74ddca1a61f}} 
+\index{Utilisateur@{Utilisateur}!prenom@{prenom}}
+\index{prenom@{prenom}!Utilisateur@{Utilisateur}}
+\doxysubsubsection{\texorpdfstring{prenom}{prenom}}
+{\footnotesize\ttfamily std\+::string Utilisateur\+::prenom\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prénom de l\textquotesingle{}utilisateur 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+utilisateur.\+h\item 
+Utilisateur.\+hpp\item 
+utilisateur.\+cpp\end{DoxyCompactItemize}

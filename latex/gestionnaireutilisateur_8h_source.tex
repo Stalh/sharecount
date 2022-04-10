@@ -1,0 +1,29 @@
+\hypertarget{gestionnaireutilisateur_8h_source}{}\doxysection{gestionnaireutilisateur.\+h}
+\mbox{\hyperlink{gestionnaireutilisateur_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GESTIONNAIREUTILISATEUR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GESTIONNAIREUTILISATEUR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}utilisateur.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_gestionnaire_utilisateur}{GestionnaireUtilisateur}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     std::map<std::string,Utilisateur> utilisateurs; }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_gestionnaire_utilisateur_a7d44afbfd45772034a6fce47bfcb4bae}{GestionnaireUtilisateur}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{comment}{// Destructeur}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{28     \mbox{\hyperlink{class_gestionnaire_utilisateur_a2f72300ab1226e5ccfde88c14d695f77}{\string~GestionnaireUtilisateur}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     \textcolor{keyword}{const} std::map<std::string, Utilisateur> \&\mbox{\hyperlink{class_gestionnaire_utilisateur_aa5e783cfb66e8c2bbffe6a310cb53332}{getUtilisateurs}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40     \mbox{\hyperlink{class_utilisateur}{Utilisateur}} \&\mbox{\hyperlink{class_gestionnaire_utilisateur_a46acaa0f40a8a806d4c2055d468c8e97}{getUtilisateur}}(std::string \textcolor{keywordtype}{id});}
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// GESTIONNAIREUTILISATEUR\_H}}
+
+\end{DoxyCode}

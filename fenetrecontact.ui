@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreContact</class>
+ <widget class="QWidget" name="FenetreContact">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#deconnexionButton{ 
+ border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+	border-color: black;
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #CFCFCF , stop:1 #F2F2F2);
+}
+#goBackToMenu{
+ border-width: 2px;
+    border-style: none;
+    border-radius: 3px;
+	background: transparent;
+}
+#sendContact {
+ border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+	border-color: black;
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #CFCFCF , stop:1 #F2F2F2);
+}
+
+QLineEdit{
+background-color: #FBFCFC; 
+}</string>
+  </property>
+  <widget class="QPushButton" name="goBackToMenu">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Retour vers le menu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background: transparent;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/new/images/logo.png</normaloff>:/new/images/logo.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>110</y>
+     <width>491</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#groupBox{
+border-width :3px; 
+border-style:solid;
+border-color:black;}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nom : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Prénom : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Mail : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Message : </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nomContact">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>80</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="prenomContact">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="mailContact">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>180</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="messageContact">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>230</y>
+      <width>291</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendContact">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>380</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Envoyer la réclamation&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Envoyer</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="labelContact">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>FORMULAIRE DE CONTACT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deconnexionButton">
+   <property name="geometry">
+    <rect>
+     <x>599</x>
+     <y>40</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Déconnexion</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

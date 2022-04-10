@@ -1,0 +1,35 @@
+\hypertarget{_utilisateur_8hpp_source}{}\doxysection{Utilisateur.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef UTILISATEUR}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define UTILISATEUR}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{comment}{//Pour les affichages}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{comment}{//Pour l'utilisation d'une liste d'éléments}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{comment}{//La classe Utilisateur fait référence à la classe Compte donc on la définit ici}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_compte}{Compte}};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_utilisateur}{Utilisateur}} \{}
+\DoxyCodeLine{18     }
+\DoxyCodeLine{19     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         std::string \mbox{\hyperlink{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}{nom}}; }
+\DoxyCodeLine{22         std::string \mbox{\hyperlink{class_utilisateur_a7cbd4b405cdff4fed665d74ddca1a61f}{prenom}}; }
+\DoxyCodeLine{23         std::string \mbox{\hyperlink{class_utilisateur_ae5c074763a47d2d73f2856331754fb3e}{id}}; }
+\DoxyCodeLine{24         std::string \mbox{\hyperlink{class_utilisateur_abaabdf27157a48a5fb05be8d02362771}{mail}};}
+\DoxyCodeLine{25         std::string \mbox{\hyperlink{class_utilisateur_ae9f165faae2b557a054359d7047126d3}{motDePasse}}; }
+\DoxyCodeLine{26         \textcolor{comment}{//vector représente une liste contigüe en mémoire (sinon il exxiste list mais ressemble plutôt à une liste chaînée)}}
+\DoxyCodeLine{27         std::vector<Compte> \mbox{\hyperlink{class_utilisateur_a200d1ca800580b4266beb8f14883df11}{comptes}}; }
+\DoxyCodeLine{29     \textcolor{keyword}{public}:}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_utilisateur_a37e07e4ffbdf4e18e6741dd210081de9}{Utilisateur}}(std::string \textcolor{keywordtype}{id}, std::string \mbox{\hyperlink{class_utilisateur_abaabdf27157a48a5fb05be8d02362771}{mail}}, std::string \mbox{\hyperlink{class_utilisateur_ae9f165faae2b557a054359d7047126d3}{motDePasse}});}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{43         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_utilisateur_acfeefb1f43acb46e83fa3476fff52fcf}{ajouterGDB}}(std::string \mbox{\hyperlink{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}{nom}});}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_utilisateur_a9faa248cb5ec44a5af28c8a45b291638}{ajouterCagnotte}}(std::string \mbox{\hyperlink{class_utilisateur_a04d1879dcf1e157f8606cc97b44b0cf6}{nom}}, \textcolor{keywordtype}{float} objectif);}
+\DoxyCodeLine{50 \};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreAuthentification</class>
+ <widget class="QWidget" name="FenetreAuthentification">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{ 
+ border-width: 2px;
+    border-style: none;
+    border-radius: 3px;
+	border-color: transparent;
+background: qlineargradient(spread:pad, x1:1 y1:1, x2:0, y2:0, stop:0 #CFCFCF , stop:1 #F2F2F2);
+}
+#authentifierButton{
+border-style:solid;
+border-color:black; 
+}
+
+QLineEdit{
+background-color: #FBFCFC; 
+}
+
+#voirMdp{
+background-color:transparent; 
+}</string>
+  </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>140</y>
+     <width>141</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Authentification</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>60</y>
+     <width>211</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>30</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>SHARE€OUNT</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>471</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{ border: 3px solid black;}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>149</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Helvetica Neue</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Identifiant: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>Helvetica Neue</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Mot de passe: </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="authentifierButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>190</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Se connecter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="creerCompteButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>300</y>
+      <width>361</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background: transparent;}</string>
+    </property>
+    <property name="text">
+     <string>Pas encore inscrit? Cliquez ici</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="identifiant">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>110</y>
+      <width>219</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Saissez votre identifiant&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="mdp">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>150</y>
+      <width>219</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica Neue</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Saisissez votre mot de passe&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="voirMdp">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>150</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;voir/cacher le mot de passe&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/new/images/eye.png</normaloff>:/new/images/eye.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background: transparent;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/logo.png</normaloff>:/new/images/logo.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>111</width>
+     <height>111</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

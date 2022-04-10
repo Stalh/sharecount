@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+<file alias="icon.icns">/Users/rmartini/Desktop/ShareCount/sharecount/icon.icns</file>
+</qresource>
+</RCC>
